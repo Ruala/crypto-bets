@@ -43,6 +43,14 @@ h3 {
 
 .uk-input, .uk-select, .uk-textarea {
   color: @font-color-default;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.uk-form-icon {
+  font-weight: @font-weight-thin;
+  color: @font-color-default;
+  font-size: @font-size-big;
 }
 
 .uk-button {
@@ -69,6 +77,7 @@ h3 {
 .uk-button-default {
   background-color: transparent;
   color: @font-color-default;
+  text-transform: none;
 }
 
 .uk-button-default:focus, .uk-button-default:hover, .uk-button-default.uk-active, .uk-button-default:active {
@@ -93,6 +102,10 @@ h3 {
 
 .tm-button-tertiary {
   background-color: @bg-button-tertiary;
+  color: @font-color-primary;
+  font-size: @font-size-big;
+  font-weight: @font-weight-thick;
+  text-transform: none;
 }
 
 .tm-background-tertiary {
@@ -108,7 +121,15 @@ h3 {
 //
 
 .tm-button-whitelist{
+  //width: 120px;
+  //height: 40px;
   font-size: @font-size-big;
   font-weight: @font-weight-thick;
-  text-transform: none;
+  //padding: 0;
+}
+
+.tm-input-top {
+  font-size: @font-size-big;
+  font-weight: @font-weight-thick;
+  padding: 15px;
 }
