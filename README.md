@@ -1,4 +1,4 @@
-# webpack-uikit
+# CryptoBets
 
 features:
 - uikit through CDN v3.0.0
