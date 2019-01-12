@@ -1,9 +1,24 @@
 html {
-  //background-color: darkblue;
+  background-color: darkblue;
   font-family: @font-family-global;
   font-weight: @font-weight-global;
   font-size: @font-size-global;
   color: @font-color-global;
+}
+
+h2 {
+  font-family: @font-family-global;
+  font-weight: @font-weight-thick;
+  font-size: @font-size-header-small;
+  color: @font-color-default;
+}
+
+h3 {
+  font-family: @font-family-global;
+  font-weight: @font-weight-global;
+  font-size: @font-size-global;
+  color: @font-color-global;
+  text-transform: uppercase;
 }
 
 //
@@ -44,10 +59,12 @@ html {
 
 .uk-button-secondary {
   background-color: @bg-button-secondary;
+  color: @font-color-default;
 }
 
 .uk-button-default {
   background-color: transparent;
+  color: @font-color-default;
 }
 
 .uk-background-primary {
@@ -79,3 +96,7 @@ html {
 //Theme
 //Local
 //
+
+.tm-button-whitelist{
+  font-size: @font-size-big;
+}
