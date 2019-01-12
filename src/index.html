@@ -18,45 +18,38 @@
 
 <div class="uk-offcanvas-content">
     <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
-        <div>
+        <div uk-margin="margin: uk-margin-top">
 
             <!--Header-->
-            <header class="uk-navbar-container uk-position-relative">
-                <nav class="" uk-navbar>
-                    <div class="uk-navbar-left">
+            <header>
+                <div class="uk-container">
+                    <nav class="" uk-navbar>
+                        <div class="uk-navbar-left">
 
-                        <!--mobile menu toggle-->
-                        <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@l"
-                           uk-navbar-toggle-icon uk-toggle></a>
+                            <!--mobile menu toggle-->
+                            <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
+                               uk-navbar-toggle-icon uk-toggle></a>
 
-                        <!--logo-->
-                        <a class="uk-navbar-item uk-logo" href="/">
-                            <img src="images/logo_tourweek.png" alt="">
-                        </a>
+                            <!--logo-->
+                            <a class="uk-navbar-item uk-logo" href="/">Crypto<span>Bets</span></a>
+                        </div>
 
-                        <!--navbar menu-->
-                        <ul class="uk-navbar-nav uk-visible@l">
-                            <li><a href="#"></a></li>
-                            <li>
-                                <a href="#"></a>
+                        <div class="uk-navbar-right uk-visible@l">
 
-                                <div class="uk-navbar-dropdown"
-                                     uk-drop="mode: click; boundary: !header; boundary-align: true; pos: bottom-justify;">
-                                    <div class="uk-container">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav uk-column-1-4">
-                                            <li><a href="#"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                            <!--navbar menu-->
+                            <ul class="uk-navbar-nav uk-visible@m">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Смартконтракт</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
 
-                    </div>
+                            <div class="uk-navbar-item">
+                                <button type="button" class="uk-button">Создать новую игру</button>
+                            </div>
 
-                    <div class="uk-navbar-center uk-visible@l"></div>
-
-                    <div class="uk-navbar-right"></div>
-                </nav>
+                        </div>
+                    </nav>
+                </div>
             </header>
 
 
