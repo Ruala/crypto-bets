@@ -186,7 +186,7 @@ h3 {
     font-size: @font-size-big;
     font-weight: @font-weight-thick;
     padding: 0 15px;
-    max-width: 200px;
+    max-width: 130px;
   }
 }
 
@@ -310,4 +310,19 @@ h3 {
   font-weight: 600;
   //padding: 15px;
   color: @font-color-default;
+}
+
+.tm-select-sort.uk-select:not([multiple]):not([size]) {
+  height: 30px;
+  background-color: @bg-input-primary;
+  background-position: 98% 50%;
+  color: @font-color-global;
+  font-size: @font-size-large;
+}
+
+.tm-select-filter.uk-select:not([multiple]):not([size]) {
+  height: 30px;
+  width: 150px;
+  background-color: @bg-input-primary;
+  font-size: @font-size-large;
 }
