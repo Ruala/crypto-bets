@@ -250,6 +250,27 @@ h3 {
 .tm-button-filter {
   background-color: @bg-global-tertiary;
   color: @font-color-global;
+  max-width: 110px;
+
+  &.tm-toggle-active {
+    position: relative;
+    background-color: @bg-global-primary;
+    //height: 60px;
+    line-height: 20px;
+    //padding-bottom: 20px;
+    border-radius: 3px 3px 0 0;
+
+    &:before {
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      min-height: 20px;
+      min-width: 100%;
+      background-color: @bg-global-primary;
+      content: '';
+    }
+
+  }
 }
 
 .tm-button-role {
@@ -382,3 +403,8 @@ h3 {
 .tm-raffle-wrap {
   padding: 30px 30px 40px;
 }
+
+//
+//
+//
+
