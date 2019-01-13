@@ -39,7 +39,7 @@ h3 {
   }
 }
 
-.uk-navbar-nav>li>a {
+.uk-navbar-nav > li > a {
   font-family: @font-family-global;
   font-size: @font-size-big;
   color: @font-color-default;
@@ -88,6 +88,7 @@ h3 {
   background-color: @bg-button-secondary;
   color: @font-color-default;
 }
+
 .uk-button-secondary:focus, .uk-button-secondary:hover, .uk-button-secondary.uk-active, .uk-button-secondary:active {
   background-color: @bg-button-secondary;
   color: @font-color-default;
@@ -122,7 +123,7 @@ h3 {
   padding: 10px;
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
 
-  h3{
+  h3 {
     margin: 0;
   }
 }
@@ -173,59 +174,97 @@ h3 {
 }
 
 .tm-games {
+  .tm-box-small {
+    border-radius: 3px 3px 0 0;
+  }
+
+  .tm-box {
+    padding: 25px 30px;
+  }
+
 
   h2 {
     font-weight: @font-weight-global;
   }
 }
 
-  .tm-text-secondary {
-    color: @font-color-secondary;
+.tm-text-secondary {
+  color: @font-color-secondary;
+}
+
+//
+//Theme
+//Local
+//
+.tm-button-new {
+  text-transform: none;
+  font-weight: @font-weight-thick;
+}
+
+.tm-button-whitelist {
+  width: 120px;
+  height: 40px;
+  font-size: @font-size-big;
+  font-weight: @font-weight-thick;
+  padding: 0;
+}
+
+.tm-button-filter {
+  background-color: @bg-global-tertiary;
+  color: @font-color-global;
+}
+
+.tm-box-small {
+  padding: 25px 30px;
+}
+
+.tm-box-large {
+  padding: 35px 25px 30px;
+}
+
+.tm-card-private {
+
+  h3.tm-title-marked {
+    position: relative;
   }
 
-  //
-  //Theme
-  //Local
-  //
-  .tm-button-new {
-    text-transform: none;
-    font-weight: @font-weight-thick;
+  h3.tm-title-marked:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: FontAwesome;
+    content: "\f084";
+    color: @font-color-default;
+  }
+}
+
+.tm-card-open {
+
+  h3.tm-title-marked {
+    position: relative;
   }
 
-  .tm-button-whitelist{
-    width: 120px;
-    height: 40px;
-    font-size: @font-size-big;
-    font-weight: @font-weight-thick;
-    padding: 0;
+  h3.tm-title-marked:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: FontAwesome;
+    content: "\f0c0";
+    color: @font-color-default;
   }
+}
 
-  .tm-button-filter {
-    background-color: @bg-global-tertiary;
-    color: @font-color-global;
-  }
-
-  .tm-box-small {
-    padding: 25px 30px;
-  }
-
-  .tm-box-large {
-    padding: 35px 25px 30px;
-  }
-
-  //not tm
+//not tm
 
 .bet {
   font-size: @font-size-header-normal;
 }
-
 
 //Header
 
 @media (max-width: 559px) {
 
   .tm-header {
-
 
     > .uk-container {
 
@@ -244,7 +283,6 @@ h3 {
     flex-wrap: wrap;
   }
 }
-
 
 //
 //Select2 classes
