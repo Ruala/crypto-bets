@@ -70,6 +70,7 @@ h3 {
 .uk-button {
   font-size: @font-size-large;
   border-radius: 3px;
+  min-height: 40px;
 
 }
 
@@ -98,6 +99,7 @@ h3 {
   background-color: transparent;
   color: @font-color-default;
   text-transform: none;
+  padding: 0 50px;
 }
 
 .uk-button-default:focus, .uk-button-default:hover, .uk-button-default.uk-active, .uk-button-default:active {
@@ -125,6 +127,19 @@ h3 {
 
   h3 {
     margin: 0;
+  }
+
+  h3.tm-title-marked {
+    position: relative;
+    padding: 5px 0 10px;
+  }
+
+  h3.tm-title-marked:before {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    font-family: FontAwesome;
+    color: @font-color-default;
   }
 }
 
@@ -177,7 +192,7 @@ h3 {
 
 .tm-games {
   .tm-box-small {
-    border-radius: 3px 3px 0 0;
+    border-radius: 5px 5px 0 0;
   }
 
   .tm-box {
@@ -208,7 +223,14 @@ h3 {
   height: 40px;
   font-size: @font-size-big;
   font-weight: @font-weight-thick;
-  padding: 0;
+  padding: 0 10px;
+  white-space: nowrap;
+
+  i {
+    border: 2px solid @font-color-default;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
 }
 
 .tm-button-filter {
@@ -225,34 +247,22 @@ h3 {
 }
 
 .tm-card-private {
-
-  h3.tm-title-marked {
-    position: relative;
-  }
-
   h3.tm-title-marked:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-family: FontAwesome;
-    content: "\f084";
-    color: @font-color-default;
+    //content: "\f084";
+    content: "";
+    background-image: url("/images/game-private.png");
+    width: 14px;
+    height: 14px;
   }
 }
 
 .tm-card-open {
-
-  h3.tm-title-marked {
-    position: relative;
-  }
-
   h3.tm-title-marked:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-family: FontAwesome;
-    content: "\f0c0";
-    color: @font-color-default;
+    //content: "\f0c0";
+    content: "";
+    background-image: url("/images/game-public.png");
+    width: 20px;
+    height: 12px;
   }
 }
 
