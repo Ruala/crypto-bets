@@ -37,6 +37,10 @@ h3 {
   span {
     color: #c08cff;
   }
+
+  &:focus, &:hover {
+    color: @font-color-default;
+  }
 }
 
 .uk-navbar-nav > li > a {
@@ -44,6 +48,10 @@ h3 {
   font-size: @font-size-big;
   color: @font-color-default;
   text-transform: none;
+
+  &:hover, &:focus {
+    color: @font-color-global;
+  }
 }
 
 .uk-input, .uk-select, .uk-textarea {
@@ -88,9 +96,10 @@ h3 {
 .uk-button-secondary {
   background-color: @bg-button-secondary;
   color: @font-color-default;
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.27);
 
   &:focus, &:hover, &.uk-active, &:active {
-    background-color: @bg-button-secondary;
+    background-color: darken(@bg-button-secondary,15%);
     color: @font-color-default;
   }
 }
@@ -169,6 +178,12 @@ h3 {
   font-size: @font-size-big;
   font-weight: @font-weight-thick;
   text-transform: none;
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.27);
+
+  &:hover, &:focus, &:active {
+    background-color: @bg-button-secondary;
+    color: @font-color-default;
+  }
 }
 
 .tm-background-tertiary {
