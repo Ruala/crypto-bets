@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -21,10 +21,10 @@
         <div>
 
             <!--Header-->
-            <header>
+            <header class="tm-header uk-navbar-container uk-navbar-transparent">
                 <div class="uk-container">
-                    <nav class="" uk-navbar>
-                        <div class="uk-navbar-left">
+                    <nav class="tm-header-navbar" uk-navbar>
+                        <div class="uk-navbar-left uk-flex-center">
 
                             <!--mobile menu toggle-->
                             <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
@@ -34,7 +34,7 @@
                             <a class="uk-navbar-item uk-logo" href="/">Crypto<span>Bets</span></a>
                         </div>
 
-                        <div class="uk-navbar-right uk-visible@l">
+                        <div class="uk-navbar-right uk-flex-center">
 
                             <!--navbar menu-->
                             <ul class="uk-navbar-nav uk-visible@m">
@@ -57,67 +57,50 @@
             <!-- Content -->
             <div class="uk-container" uk-margin="margin: uk-margin-top">
 
-                <!--new game-->
+                <!--game statistic-->
                 <div class="tm-box-large tm-background-top uk-border-rounded">
-                    <div class="uk-flex-bottom" uk-grid>
+                    <div class="uk-child-width-1-3@m" uk-grid>
                         <div>
-                            <h2>Создать <br>
-                                новую игру
-                            </h2>
+                            <h2>Ставки за сутки</h2>
+                            <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
+                            <div><span>16800</span> ставок</div>
                         </div>
 
-                        <!--type-->
                         <div>
-                            <h3>Тип игры</h3>
-                            <div class="uk-grid-small" uk-grid>
-                                <div>
-                                    <select>
-                                        <option>Приватная</option>
-                                        <option>Другая</option>
-                                        <option>Другая</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <button type="button" class="tm-button-whitelist uk-button uk-button-default">
-                                        <i class="fa fa-plus uk-margin-right" aria-hidden="true"></i>
-                                        Whitelist
-                                    </button>
-                                </div>
-                            </div>
+                            <h2>Джекпот</h2>
+                            <div class="bet">21.050 <sup class="uk-text-uppercase">eth</sup></div>
+                            <div>Выиграл <span>0x7a4ca7</span></div>
                         </div>
 
-                        <!--new-->
                         <div>
-                            <div class="uk-flex-bottom" uk-grid>
-                                <div>
-                                    <h3>Сумма ставки</h3>
-                                    <div>
-                                        <div class="uk-inline">
-                                            <span class="uk-form-icon uk-form-icon-flip">eth</span>
-                                            <input class="tm-input-top uk-input uk-background-secondary" type="text" value="0.0001">
-                                        </div>
+                            <h2>Лидеры</h2>
+                            <ul class="tm-leader-list uk-list">
+                                <li>
+                                    <div class="uk-flex uk-flex-between">
+                                        <div>0x828gfg235235b8</div>
+                                        <div>21.050 <span class="uk-text-uppercase">eth</span></div>
                                     </div>
-                                </div>
-
-                                <div>
-                                    <h3>Макс. кол-во игроков</h3>
-                                    <div>
-                                        <input class="tm-input-top uk-input uk-background-secondary uk-text-center" type="text" value="10">
+                                </li>
+                                <li>
+                                    <div class="uk-flex uk-flex-between">
+                                        <div>0x828gfg235235b8</div>
+                                        <div>21.050 <span class="uk-text-uppercase">eth</span></div>
                                     </div>
-                                </div>
-
-                                <div>
-                                    <button type="button" class="tm-button-tertiary uk-button">Играть</button>
-                                </div>
-                            </div>
+                                </li>
+                                <li>
+                                    <div class="uk-flex uk-flex-between">
+                                        <div>0x828gfg235235b8</div>
+                                        <div>21.050 <span class="uk-text-uppercase">eth</span></div>
+                                    </div>
+                                </li>
+                            </ul>
 
                         </div>
 
                     </div>
                 </div>
 
-                <!--my game-->
+                <!--my games-->
                 <div class="uk-border-rounded uk-background-primary">
                     <div class="tm-box-small uk-background-secondary">
                         <div class="uk-flex-bottom uk-flex-between" uk-grid>
@@ -206,123 +189,193 @@
                             </div>
                         </div>
 
-                        <!-- game cards -->
+                        <!-- game cards (small cards)-->
                         <div class="">
-                            <div class="uk-child-width-1-5" uk-grid>
+                            <div class="uk-child-width-1-2@m" uk-grid>
 
-                                <!--card-->
+                                <!--card small-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="uk-card uk-cerd-small uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
-                                            <div class="bet">1.9999 <sup>eth</sup></div>
+                                            <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
                                         </div>
 
-                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                        <div class="uk-card-body">
                                             <h3>Игроки</h3>
                                             <div>
                                                 <span>2</span> из <span>5</span>
                                             </div>
                                         </div>
 
-                                        <div class="uk-card-footer">
-                                            <h3 class="">Приватная игра</h3>
-                                            <button type="button" class="uk-button">Зайти</button>
+                                        <div class="uk-card-footer uk-width-auto@s">
+                                            <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                <div>
+                                                    <h3>Тип игры</h3>
+                                                    <div class="tm-game-type-marker">Приватная</div>
+                                                </div>
+
+                                                <div>
+                                                    <button type="button" class="uk-button uk-button-primary">Зайти</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--card-->
+                                <!--card small-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="uk-card uk-cerd-small uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
-                                            <div class="bet">1.9999 <sup>eth</sup></div>
+                                            <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
                                         </div>
 
-                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                        <div class="uk-card-body">
                                             <h3>Игроки</h3>
                                             <div>
                                                 <span>2</span> из <span>5</span>
                                             </div>
                                         </div>
 
-                                        <div class="uk-card-footer">
-                                            <h3 class="">Приватная игра</h3>
-                                            <button type="button" class="uk-button">Зайти</button>
+                                        <div class="uk-card-footer uk-width-auto@s">
+                                            <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                <div>
+                                                    <h3>Тип игры</h3>
+                                                    <div class="tm-game-type-marker">Приватная</div>
+                                                </div>
+
+                                                <div>
+                                                    <button type="button" class="uk-button uk-button-primary">Зайти</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--card-->
+                                <!--card small-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="uk-card uk-cerd-small uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
-                                            <div class="bet">1.9999 <sup>eth</sup></div>
+                                            <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
                                         </div>
 
-                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                        <div class="uk-card-body">
                                             <h3>Игроки</h3>
                                             <div>
                                                 <span>2</span> из <span>5</span>
                                             </div>
                                         </div>
 
-                                        <div class="uk-card-footer">
-                                            <h3 class="">Приватная игра</h3>
-                                            <button type="button" class="uk-button">Зайти</button>
+                                        <div class="uk-card-footer uk-width-auto@s">
+                                            <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                <div>
+                                                    <h3>Тип игры</h3>
+                                                    <div class="tm-game-type-marker">Приватная</div>
+                                                </div>
+
+                                                <div>
+                                                    <button type="button" class="uk-button uk-button-primary">Зайти</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--card-->
+                                <!--card small-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="uk-card uk-cerd-small uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
-                                            <div class="bet">1.9999 <sup>eth</sup></div>
+                                            <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
                                         </div>
 
-                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                        <div class="uk-card-body">
                                             <h3>Игроки</h3>
                                             <div>
                                                 <span>2</span> из <span>5</span>
                                             </div>
                                         </div>
 
-                                        <div class="uk-card-footer">
-                                            <h3 class="">Приватная игра</h3>
-                                            <button type="button" class="uk-button">Зайти</button>
+                                        <div class="uk-card-footer uk-width-auto@s">
+                                            <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                <div>
+                                                    <h3>Тип игры</h3>
+                                                    <div class="tm-game-type-marker">Приватная</div>
+                                                </div>
+
+                                                <div>
+                                                    <button type="button" class="uk-button uk-button-primary">Зайти</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!--card-->
+                                <!--card small-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="uk-card uk-cerd-small uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
-                                            <div class="bet">1.9999 <sup>eth</sup></div>
+                                            <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
                                         </div>
 
-                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                        <div class="uk-card-body">
                                             <h3>Игроки</h3>
                                             <div>
                                                 <span>2</span> из <span>5</span>
                                             </div>
                                         </div>
 
-                                        <div class="uk-card-footer">
-                                            <h3 class="">Приватная игра</h3>
-                                            <button type="button" class="uk-button">Зайти</button>
+                                        <div class="uk-card-footer uk-width-auto@s">
+                                            <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                <div>
+                                                    <h3>Тип игры</h3>
+                                                    <div class="tm-game-type-marker">Приватная</div>
+                                                </div>
+
+                                                <div>
+                                                    <button type="button" class="uk-button uk-button-primary">Зайти</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card small-->
+                                <div>
+                                    <div class="uk-card uk-cerd-small uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer uk-width-auto@s">
+                                            <div class="uk-flex-middle uk-flex-between" uk-grid>
+                                                <div>
+                                                    <h3>Тип игры</h3>
+                                                    <div class="tm-game-type-marker">Приватная</div>
+                                                </div>
+
+                                                <div>
+                                                    <button type="button" class="uk-button uk-button-primary">Зайти</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!--show more-->
                                 <div class="uk-width-1-1 uk-text-center">
-                                    <button type="button" class="uk-button">Показать еще</button>
+                                    <button type="button" class="uk-button uk-button-default">Показать еще</button>
                                 </div>
                             </div>
                         </div>
@@ -331,7 +384,7 @@
 
                 </div>
 
-                <!--common game-->
+                <!--common games-->
                 <div class="uk-border-rounded uk-background-primary">
                     <div class="tm-box-small uk-background-secondary">
                         <div class="uk-flex-bottom uk-flex-between" uk-grid>
@@ -422,14 +475,14 @@
 
                         <!-- game cards -->
                         <div class="">
-                            <div class="uk-child-width-1-5" uk-grid>
+                            <div class="uk-child-width-1-3@s uk-child-width-1-5@m" uk-grid>
 
                                 <!--card-->
                                 <div>
                                     <div class="uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
-                                            <div class="bet">1.9999 <sup>eth</sup></div>
+                                            <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
                                         </div>
 
                                         <div class="uk-card-body uk-flex uk-flex-between">
@@ -440,8 +493,8 @@
                                         </div>
 
                                         <div class="uk-card-footer">
-                                            <h3 class="">Приватная игра</h3>
-                                            <button type="button" class="uk-button">Зайти</button>
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
                                         </div>
                                     </div>
                                 </div>
@@ -451,7 +504,7 @@
                                     <div class="uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
-                                            <div class="bet">1.9999 <sup>eth</sup></div>
+                                            <div class="bet">2.4500<sup class="uk-text-uppercase">eth</sup></div>
                                         </div>
 
                                         <div class="uk-card-body uk-flex uk-flex-between">
@@ -462,8 +515,8 @@
                                         </div>
 
                                         <div class="uk-card-footer">
-                                            <h3 class="">Приватная игра</h3>
-                                            <button type="button" class="uk-button">Зайти</button>
+                                            <h3 class="tm-title-marked">Открытая игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
                                         </div>
                                     </div>
                                 </div>
@@ -473,7 +526,7 @@
                                     <div class="uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
-                                            <div class="bet">1.9999 <sup>eth</sup></div>
+                                            <div class="bet">0.0009<sup class="uk-text-uppercase">eth</sup></div>
                                         </div>
 
                                         <div class="uk-card-body uk-flex uk-flex-between">
@@ -484,8 +537,8 @@
                                         </div>
 
                                         <div class="uk-card-footer">
-                                            <h3 class="">Приватная игра</h3>
-                                            <button type="button" class="uk-button">Зайти</button>
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
                                         </div>
                                     </div>
                                 </div>
@@ -495,7 +548,7 @@
                                     <div class="uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
-                                            <div class="bet">1.9999 <sup>eth</sup></div>
+                                            <div class="bet">1.0000<sup class="uk-text-uppercase">eth</sup></div>
                                         </div>
 
                                         <div class="uk-card-body uk-flex uk-flex-between">
@@ -506,8 +559,8 @@
                                         </div>
 
                                         <div class="uk-card-footer">
-                                            <h3 class="">Приватная игра</h3>
-                                            <button type="button" class="uk-button">Зайти</button>
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
                                         </div>
                                     </div>
                                 </div>
@@ -517,7 +570,7 @@
                                     <div class="uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
-                                            <div class="bet">1.9999 <sup>eth</sup></div>
+                                            <div class="bet">0.0500<sup class="uk-text-uppercase">eth</sup></div>
                                         </div>
 
                                         <div class="uk-card-body uk-flex uk-flex-between">
@@ -528,15 +581,235 @@
                                         </div>
 
                                         <div class="uk-card-footer">
-                                            <h3 class="">Приватная игра</h3>
-                                            <button type="button" class="uk-button">Зайти</button>
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card-->
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer">
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card-->
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">2.4500<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer">
+                                            <h3 class="tm-title-marked">Открытая игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card-->
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">0.0009<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer">
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card-->
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">1.0000<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer">
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card-->
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">0.0500<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer">
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card-->
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer">
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card-->
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">2.4500<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer">
+                                            <h3 class="tm-title-marked">Открытая игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card-->
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">0.0009<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer">
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card-->
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">1.0000<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer">
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--card-->
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h3>Ставка</h3>
+                                            <div class="bet">0.0500<sup class="uk-text-uppercase">eth</sup></div>
+                                        </div>
+
+                                        <div class="uk-card-body uk-flex uk-flex-between">
+                                            <h3>Игроки</h3>
+                                            <div>
+                                                <span>2</span> из <span>5</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="uk-card-footer">
+                                            <h3 class="tm-title-marked">Приватная игра</h3>
+                                            <button type="button" class="uk-button uk-button-primary uk-width-1-1">Зайти</button>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!--show more-->
                                 <div class="uk-width-1-1 uk-text-center">
-                                    <button type="button" class="uk-button">Показать еще</button>
+                                    <button type="button" class="uk-button uk-button-default">Показать еще</button>
                                 </div>
                             </div>
                         </div>
@@ -563,9 +836,11 @@
         <div class="uk-offcanvas-bar">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-            <div class="uk-card uk-flex uk-flex-center">
+            <div class="uk-padding-small uk-flex uk-flex-center">
                 <ul class="uk-nav">
-                    <li><a href="#"></a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Смартконтракт</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
         </div>

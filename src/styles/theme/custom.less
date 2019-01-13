@@ -6,6 +6,7 @@ html {
   font-weight: @font-weight-global;
   font-size: @font-size-global;
   color: @font-color-global;
+  min-width: 320px;
 }
 
 h2 {
@@ -203,6 +204,32 @@ h3 {
 
   //not tm
 
-  .bet {
-    font-size: @font-size-header-normal;
+.bet {
+  font-size: @font-size-header-normal;
+}
+
+
+//Header
+
+@media (max-width: 559px) {
+
+  .tm-header {
+
+
+    > .uk-container {
+
+      .uk-navbar-left, .uk-navbar-right {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    .uk-logo {
+      font-size: 40px;
+    }
   }
+
+  .tm-header-navbar {
+    flex-wrap: wrap;
+  }
+}
