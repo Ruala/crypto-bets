@@ -59,7 +59,6 @@
                 </div>
             </header>
 
-
             <!-- Content -->
             <div class="uk-container" uk-margin="margin: uk-margin-top">
 
@@ -107,11 +106,11 @@
                 </div>
 
                 <!--my games-->
-                <div class="uk-border-rounded uk-background-primary">
+                <div class="tm-games uk-border-rounded uk-background-primary">
                     <div class="tm-box-small uk-background-secondary">
                         <div class="uk-flex-bottom uk-flex-between" uk-grid>
                             <div>
-                                <h2 class="tm-fontweight-normal">Мои игры: <span class="tm-text-secondary">56</span></h2>
+                                <h2>Мои игры: <span class="tm-text-secondary">56</span></h2>
                             </div>
 
                             <div>
@@ -125,7 +124,7 @@
                                             </div>
 
                                             <div>
-                                                <select>
+                                                <select class="tm-select-sort uk-select" name="select-sort-my-games">
                                                     <option>От большего количества участников к меньшему</option>
                                                     <option>Другое</option>
                                                     <option>Другое</option>
@@ -155,15 +154,15 @@
                                 <div>
                                     <h3>Роль</h3>
                                     <div class="uk-button-group">
-                                        <button class="uk-button">Участник</button>
-                                        <button class="uk-button">Создатель</button>
+                                        <button class="tm-button-role tm-role-user uk-button uk-active">Участник</button>
+                                        <button class="tm-button-role tm-role-creator uk-button">Создатель</button>
                                     </div>
                                 </div>
 
                                 <div>
                                     <h3>Тип игры</h3>
                                     <div>
-                                        <select>
+                                        <select class="tm-select-filter uk-select" name="select-filter-my-games">
                                             <option>Приватная</option>
                                             <option>Другая</option>
                                             <option>Другая</option>
@@ -189,14 +188,15 @@
                                     </div>
                                 </div>
 
-                                <div>
-                                    <button type="button" class="uk-button">Показать</button>
+                                <div class="uk-flex uk-flex-bottom">
+                                    <button type="button" class="uk-button uk-button-secondary">Показать</button>
                                 </div>
                             </div>
                         </div>
 
+
                         <!-- game cards (small cards)-->
-                        <div class="">
+                        <div class="tm-game-cards">
                             <div class="uk-child-width-1-2@m" uk-grid>
 
                                 <!--card small-->
@@ -391,11 +391,11 @@
                 </div>
 
                 <!--common games-->
-                <div class="uk-border-rounded uk-background-primary">
+                <div class="tm-games uk-border-rounded uk-background-primary">
                     <div class="tm-box-small uk-background-secondary">
                         <div class="uk-flex-bottom uk-flex-between" uk-grid>
                             <div>
-                                <h2 class="tm-fontweight-normal">Доступно игр: <span class="tm-text-secondary">523</span></h2>
+                                <h2>Доступно игр: <span class="tm-text-secondary">523</span></h2>
                             </div>
 
                             <div>
@@ -409,7 +409,7 @@
                                             </div>
 
                                             <div>
-                                                <select>
+                                                <select class="tm-select-sort uk-select" name="select-sort-all-games">
                                                     <option>От большего количества участников к меньшему</option>
                                                     <option>Другое</option>
                                                     <option>Другое</option>
@@ -439,15 +439,15 @@
                                 <div>
                                     <h3>Роль</h3>
                                     <div class="uk-button-group">
-                                        <button class="uk-button">Участник</button>
-                                        <button class="uk-button">Создатель</button>
+                                        <button class="tm-button-role tm-role-user uk-button uk-active">Участник</button>
+                                        <button class="tm-button-role tm-role-creator uk-button">Создатель</button>
                                     </div>
                                 </div>
 
                                 <div>
                                     <h3>Тип игры</h3>
                                     <div>
-                                        <select>
+                                        <select class="tm-select-filter uk-select" name="select-filter-all-games">
                                             <option>Приватная</option>
                                             <option>Другая</option>
                                             <option>Другая</option>
@@ -473,19 +473,19 @@
                                     </div>
                                 </div>
 
-                                <div>
-                                    <button type="button" class="uk-button">Показать</button>
+                                <div class="uk-flex uk-flex-bottom">
+                                    <button type="button" class="uk-button uk-button-secondary">Показать</button>
                                 </div>
                             </div>
                         </div>
 
                         <!-- game cards -->
-                        <div class="">
+                        <div class="tm-game-cards">
                             <div class="uk-child-width-1-3@s uk-child-width-1-5@m" uk-grid>
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
@@ -507,7 +507,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-open uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">2.4500<sup class="uk-text-uppercase">eth</sup></div>
@@ -529,7 +529,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">0.0009<sup class="uk-text-uppercase">eth</sup></div>
@@ -551,7 +551,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">1.0000<sup class="uk-text-uppercase">eth</sup></div>
@@ -573,7 +573,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">0.0500<sup class="uk-text-uppercase">eth</sup></div>
@@ -595,7 +595,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
@@ -617,7 +617,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-open uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">2.4500<sup class="uk-text-uppercase">eth</sup></div>
@@ -639,7 +639,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">0.0009<sup class="uk-text-uppercase">eth</sup></div>
@@ -661,7 +661,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">1.0000<sup class="uk-text-uppercase">eth</sup></div>
@@ -683,7 +683,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">0.0500<sup class="uk-text-uppercase">eth</sup></div>
@@ -705,7 +705,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">1.9999<sup class="uk-text-uppercase">eth</sup></div>
@@ -727,7 +727,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-open uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">2.4500<sup class="uk-text-uppercase">eth</sup></div>
@@ -749,7 +749,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">0.0009<sup class="uk-text-uppercase">eth</sup></div>
@@ -771,7 +771,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">1.0000<sup class="uk-text-uppercase">eth</sup></div>
@@ -793,7 +793,7 @@
 
                                 <!--card-->
                                 <div>
-                                    <div class="uk-card">
+                                    <div class="tm-card-private uk-card">
                                         <div class="uk-card-header">
                                             <h3>Ставка</h3>
                                             <div class="bet">0.0500<sup class="uk-text-uppercase">eth</sup></div>
