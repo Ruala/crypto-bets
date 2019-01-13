@@ -22,6 +22,7 @@ h3 {
   font-size: @font-size-global;
   color: @font-color-global;
   text-transform: uppercase;
+  margin: 0 0 10px 0;
 }
 
 //
@@ -51,10 +52,19 @@ h3 {
   border-radius: 3px;
 }
 
+.uk-select:not([multiple]):not([size]) {
+  background-image: url("/images/select-arrow-down.png");
+  background-repeat: no-repeat;
+  padding-right: 30px;
+  background-position: 95% 50%;
+}
+
 .uk-form-icon {
   font-weight: @font-weight-thin;
   color: @font-color-default;
   font-size: @font-size-big;
+  text-transform: uppercase;
+  padding: 0 10px;
 }
 
 .uk-button {
@@ -157,7 +167,8 @@ h3 {
   .uk-input {
     font-size: @font-size-big;
     font-weight: @font-weight-thick;
-    padding: 15px;
+    padding: 0 15px;
+    max-width: 200px;
   }
 }
 
@@ -199,7 +210,7 @@ h3 {
   }
 
   .tm-box-large {
-    padding: 40px 25px 30px;
+    padding: 35px 25px 30px;
   }
 
   //not tm
@@ -232,4 +243,21 @@ h3 {
   .tm-header-navbar {
     flex-wrap: wrap;
   }
+}
+
+
+//
+//Select2 classes
+//
+
+.tm-select-top {
+  height: 40px;
+  min-width: 160px;
+  background: @bg-global-secondary;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  //padding: 15px;
+  color: @font-color-default;
 }
