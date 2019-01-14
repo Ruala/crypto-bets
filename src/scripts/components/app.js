@@ -45,10 +45,11 @@ $(() => {
     // neironet
     (function () {
         const canvas = document.querySelector('#tm-raffle-canvas');
-        let wt = window.innerWidth;
-        let ht = window.innerHeight;
-        canvas.width = wt;
-        canvas.height = ht;
+        const parent = canvas.parentElement;
+        const wt = 1200;
+        const ht = 1000;
+        canvas.width = parent.clientWidth;
+        canvas.height = parent.clientHeight;
 
         const c = canvas.getContext('2d');
 
