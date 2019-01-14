@@ -35,6 +35,9 @@
 
 (function () {
     const canvas = document.querySelector('#tm-raffle-canvas');
+
+    if(!canvas) return;
+
     let wt = window.innerWidth;
     let ht = window.innerHeight;
     canvas.width = wt;
