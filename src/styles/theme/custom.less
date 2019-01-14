@@ -828,6 +828,31 @@ h3 {
   }
 }
 
+.tm-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: @font-weight-global;
+  color: @font-color-default;
+  font-size: @font-size-big;
+
+  h3{
+    font-weight: @font-weight-thick;
+    color: @font-color-default;
+    font-size: 32px;
+    text-transform: none;
+  }
+}
+
 @media (min-width: 959px) and (max-width: 979px) {
   .uk-card h3 {
     font-size: 10px;
