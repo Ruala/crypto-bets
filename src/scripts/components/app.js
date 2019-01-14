@@ -51,8 +51,14 @@ $(() => {
         const parent = canvas.parentElement;
         const wt = 1200;
         const ht = 1000;
-        canvas.width = parent.clientWidth;
-        canvas.height = parent.clientHeight;
+        const setCanvasWidth = () => {
+            canvas.width = parent.clientWidth;
+            canvas.height = parent.clientHeight;
+        };
+
+        setCanvasWidth();
+        setTimeout(setCanvasWidth, 1000);
+
 
         const c = canvas.getContext('2d');
 
