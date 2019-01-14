@@ -205,10 +205,31 @@ h3 {
   padding: 5px 0;
 }
 
+.uk-border-rounded {
+
+  .tm-background-primary {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
 //
 //Theme
 //Global
 //
+
+.tm-button-default {
+  height: 30px;
+  line-height: 28px;
+  max-width: 120px;
+  border: 1px solid #773dbe;
+  padding: 0 15px;
+  font-size: @font-size-small;
+  text-transform: uppercase;
+
+  &:hover, &:focus, &:active {
+    border: 1px solid @font-color-global;
+  }
+}
 
 .tm-button-tertiary {
   background-color: @bg-button-tertiary;
@@ -237,6 +258,10 @@ h3 {
     padding: 0 15px;
     max-width: 130px;
   }
+}
+
+.tm-box {
+  padding: 25px 30px 25px;
 }
 
 .tm-games {
@@ -536,19 +561,39 @@ h3 {
   border-radius: 5px 5px 0 0;
 }
 
+.tm-background-primary {
+  background-color: @bg-global-primary;
+}
+
 .tm-background-secondary {
   background-color: @bg-global-secondary;
-  border-radius: 0 0 5px 5px;
 }
 
 .tm-fonts-alt {
   h2 {
     font-size: 18px;
-    color: @font-color-global
+    color: #c08cff;
+  }
+
+  .uk-input {
+    background-color: @bg-input-primary;
+    color: @font-color-global;
+    font-size: @font-size-small;
+    font-weight: @font-weight-global;
+    padding: 0 20px;
+    text-transform: uppercase;
+    height: 30px;
   }
 }
 
 .tm-text-bets {
   color: @font-color-default;
   font-weight: @font-weight-thick;
+}
+
+.tm-game-footer {
+  h2 {
+    font-size: 18px;
+    color: #c08cff;
+  }
 }
