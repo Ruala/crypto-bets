@@ -559,17 +559,6 @@ h3 {
   font-size: @font-size-header-normal;
 }
 
-@media (min-width: 959px) and (max-width: 979px) {
-  .uk-card h3 {
-      font-size: 10px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .bet {
-    font-size: @font-size-header-small;
-  }
-}
 
 //Header
 .tm-header {
@@ -817,5 +806,22 @@ h3 {
 .tm-game-cards {
   .bet sup {
     top: -0.3em;
+  }
+}
+
+@media (min-width: 959px) and (max-width: 979px) {
+  .uk-card h3 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .tm-top-alt .bet {
+    font-size: 40px;
+  }
+
+  .bet {
+    font-size: @font-size-header-small;
   }
 }
