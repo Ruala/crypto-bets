@@ -481,10 +481,44 @@ h3 {
 }
 
 .tm-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 46px;
   font-size: 36px;
   color: @font-color-default;
   border-radius: 50%;
-  border: 2px solid @font-color-default;
+  border: 3px solid @font-color-global;
+  //text-align: center;
+}
+
+.tm-user-icon {
+  background-image: url("/images/layer-891.png");
+  background-repeat: no-repeat;
+  background-position: -1px 100%;
+  background-size: contain;
+  padding-left: 4px;
+  background-color: #39156d;
+}
+
+.tm-fonts-top {
+  color: @font-color-default;
+  font-size: 18px;
+  font-weight: @font-weight-thick;
+  text-transform: uppercase;
+
+  h3 {
+    font-size: @font-size-global;
+  }
+}
+
+.tm-background-top {
+  background-color: @bg-top;
+  border-radius: 5px 5px 0 0;
+}
+
+.tm-background-secondary {
+  background-color: @bg-global-secondary;
+  border-radius: 0 0 5px 5px;
 }
