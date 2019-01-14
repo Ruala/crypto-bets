@@ -63,6 +63,18 @@ h3 {
   margin-top: 10px;
 }
 
+.uk-grid-divider {
+  margin-left: -60px;
+
+  > * {
+    padding-left: 60px;
+  }
+
+  > :not(.uk-first-column)::before {
+    left: 30px;
+  }
+}
+
 .uk-container {
   max-width: 982px;
 }
@@ -301,6 +313,7 @@ h3 {
 }
 
 .tm-button-tertiary {
+  line-height: 40px;
   background-color: @bg-button-tertiary;
   color: @font-color-primary;
   font-size: @font-size-big;
@@ -320,10 +333,6 @@ h3 {
 
 .tm-top {
   background-color: @bg-top;
-
-  .uk-button {
-    line-height: 40px;
-  }
 
   .uk-input {
     font-size: @font-size-big;
@@ -677,8 +686,12 @@ h3 {
   .bet {
     font-weight: @font-weight-thick;
     color: @font-color-default;
-    font-size: 62px;
+    font-size: 60px;
     white-space: nowrap;
+
+    sup {
+      top: -0.3em;
+    }
   }
 
   .uk-grid-divider>:not(.uk-first-column)::before {
@@ -704,6 +717,24 @@ h3 {
     &::before {
       content: "\f27b";
       left: 10px;
+    }
+  }
+}
+
+.tm-social {
+
+  div {
+    display: flex;
+    justify-content: center;
+    max-width: 80px;
+    height: 30px;
+    background-color: @font-color-primary;
+    box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.27);
+    border-radius: 3px;
+    padding-left: 0;
+
+    svg {
+      fill: #fff;
     }
   }
 }
