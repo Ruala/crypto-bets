@@ -35,6 +35,11 @@ h3 {
 //UK-Reset
 //
 
+.uk-container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .uk-grid {
   margin-left: -30px;
 
@@ -189,7 +194,7 @@ h3 {
 
   h3.tm-title-marked {
     position: relative;
-    padding: 5px 0 10px;
+    padding: 5px 15px 10px 0;
   }
 
   h3.tm-title-marked:before {
@@ -198,6 +203,10 @@ h3 {
     right: 2px;
     font-family: FontAwesome;
     color: @font-color-default;
+  }
+
+  .uk-button {
+    font-size: @font-size-small;
   }
 }
 
@@ -214,6 +223,38 @@ h3 {
 
 .uk-card-footer {
   padding: 5px 0;
+}
+
+.uk-card-small {
+  padding: 15px;
+
+  .bet {
+    font-size: @font-size-big;
+  }
+  .uk-card-header, .uk-card-body, .uk-card-footer {
+    padding: 0;
+  }
+
+  .uk-card-body {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 15px;
+  }
+
+ .tm-game-type-marker {
+    position: relative;
+    padding: 0 20px;
+  }
+
+  .tm-game-type-marker:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-family: FontAwesome;
+    color: @font-color-default;
+  }
 }
 
 .uk-border-rounded {
@@ -426,27 +467,18 @@ h3 {
 .tm-button-filter {
   background-color: @bg-global-tertiary;
   color: @font-color-global;
-  max-width: 110px;
+  font-size: @font-size-small;
+  width: 120px;
   transition: none;
 
   &.tm-toggle-active {
     position: relative;
     background-color: @bg-global-primary;
-    //height: 60px;
-    line-height: 20px;
-    //padding-bottom: 20px;
+    line-height: 14px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: -28px;
     border-radius: 3px 3px 0 0;
-
-    &:before {
-      position: absolute;
-      bottom: -20px;
-      left: 0;
-      min-height: 20px;
-      min-width: 100%;
-      background-color: @bg-global-primary;
-      content: '';
-    }
-
   }
 }
 
@@ -483,13 +515,13 @@ h3 {
 }
 
 .tm-card-private {
-  h3.tm-title-marked:before {
+  h3.tm-title-marked:before, .tm-game-type-marker:before {
     content: "\f255";
   }
 }
 
 .tm-card-open {
-  h3.tm-title-marked:before {
+  h3.tm-title-marked:before, .tm-game-type-marker:before {
     content: "\f369";
   }
 }
@@ -508,9 +540,12 @@ h3 {
     height: 30px;
   }
 
+  .uk-button {
+    padding: 0 20px;
+  }
+
   .uk-button-secondary {
-    height: 30px;
-    line-height: 28px;
+    font-size: @font-size-small;
   }
 }
 
@@ -522,6 +557,18 @@ h3 {
 
 .bet {
   font-size: @font-size-header-normal;
+}
+
+@media (min-width: 959px) and (max-width: 979px) {
+  .uk-card h3 {
+      font-size: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .bet {
+    font-size: @font-size-header-small;
+  }
 }
 
 //Header
@@ -542,12 +589,31 @@ h3 {
     }
 
     .uk-logo {
-      font-size: 40px;
+      font-size: 36px;
     }
   }
 
   .tm-header-navbar {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 639px) {
+  .uk-card-small {
+
+    .uk-card-body {
+      padding: 0;
+      border: 1px solid transparent;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+  .uk-card-small {
+
+    .uk-card-body {
+      padding: 0 10%;
+    }
   }
 }
 
@@ -736,5 +802,11 @@ h3 {
     svg {
       fill: #fff;
     }
+  }
+}
+
+.tm-game-cards {
+  .bet sup {
+    top: -0.3em;
   }
 }
