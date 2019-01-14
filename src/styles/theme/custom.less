@@ -36,8 +36,16 @@ h3 {
 //
 
 .uk-container {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 960px) {
+
+  .uk-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .uk-grid {
@@ -240,7 +248,7 @@ h3 {
     border-bottom: none;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0 15px;
+    padding: 0 5px;
   }
 
  .tm-game-type-marker {
@@ -421,10 +429,6 @@ h3 {
     border-radius: 5px 5px 0 0;
   }
 
-  .tm-box {
-    padding: 0 30px 25px;
-  }
-
   .tm-game-cards {
     padding: 25px 0 0;
   }
@@ -514,6 +518,21 @@ h3 {
   padding: 30px;
 }
 
+@media (max-width: 959px) {
+
+  .tm-box {
+    padding: 20px;
+  }
+
+  .tm-box-small {
+    padding: 15px 20px;
+  }
+
+  .tm-box-large {
+    padding: 30px 20px;
+  }
+}
+
 .tm-card-private {
   h3.tm-title-marked:before, .tm-game-type-marker:before {
     content: "\f255";
@@ -559,17 +578,6 @@ h3 {
   font-size: @font-size-header-normal;
 }
 
-@media (min-width: 959px) and (max-width: 979px) {
-  .uk-card h3 {
-      font-size: 10px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .bet {
-    font-size: @font-size-header-small;
-  }
-}
 
 //Header
 .tm-header {
@@ -613,6 +621,15 @@ h3 {
 
     .uk-card-body {
       padding: 0 10%;
+    }
+  }
+}
+
+@media (min-width: 960px) and (max-width: 970px) {
+  .uk-card-small {
+
+    .uk-card-body {
+      padding: 0 1%;
     }
   }
 }
@@ -768,7 +785,7 @@ h3 {
 .tm-leader-list {
   li {
     position: relative;
-    padding: 0 20px 0 40px;
+    padding: 0 0 0 25px;
 
     &::before {
       display: block;
@@ -782,7 +799,7 @@ h3 {
 
     &::before {
       content: "\f27b";
-      left: 10px;
+      left: 0;
     }
   }
 }
@@ -808,5 +825,51 @@ h3 {
 .tm-game-cards {
   .bet sup {
     top: -0.3em;
+  }
+}
+
+.tm-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: @font-weight-global;
+  color: @font-color-default;
+  font-size: @font-size-big;
+
+  h3{
+    font-weight: @font-weight-thick;
+    color: @font-color-default;
+    font-size: 32px;
+    text-transform: none;
+  }
+}
+
+@media (min-width: 959px) and (max-width: 979px) {
+  .uk-card h3 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .tm-top-alt .bet {
+    font-size: 52px;
+  }
+
+  .bet {
+    font-size: @font-size-header-small;
+  }
+
+  .tm-header {
+    padding: 5px 0;
   }
 }

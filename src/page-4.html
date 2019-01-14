@@ -68,9 +68,9 @@
 
                     <!--game header-->
                     <div class="tm-box-small tm-background-top tm-fonts-top">
-                        <div class="uk-flex-between uk-flex-middle" uk-grid>
+                        <div class="uk-child-width-expand@m uk-flex-between uk-flex-middle" uk-grid>
                             <div>
-                                <div class="uk-flex-middle" uk-grid>
+                                <div class="uk-flex-between uk-flex-middle uk-grid-small" uk-grid>
                                     <div>
                                         <div class="uk-flex uk-flex-middle">
                                             <div class="tm-icon-wrap tm-user-icon uk-margin-small-right">
@@ -126,7 +126,7 @@
                                 </div>
                             </div>
 
-                            <div>
+                            <div class="uk-flex uk-flex-right uk-width-auto@m">
                                 <button type="button" class="tm-button-tertiary uk-button">Присоединиться к игре</button>
                             </div>
                         </div>
@@ -182,8 +182,12 @@
 
                             <div>
                                 <h2>Розыгрыш</h2>
-                                <div class="tm-equal-height uk-background-primary">
+                                <div class="uk-position-relative tm-equal-height uk-background-primary">
                                     <canvas id="tm-raffle-canvas" class="tm-raffle-canvas"></canvas>
+                                    <div class="tm-overlay">
+                                        <h3>Подождите</h3>
+                                        <div>Идёт определение победителя</div>
+                                    </div>
                                 </div>
                             </div>
 
