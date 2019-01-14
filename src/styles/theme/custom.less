@@ -242,6 +242,19 @@ h3 {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0 15px;
   }
+
+ .tm-game-type-marker {
+    position: relative;
+    padding: 0 20px;
+  }
+
+  .tm-game-type-marker:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-family: FontAwesome;
+    color: @font-color-default;
+  }
 }
 
 .uk-border-rounded {
@@ -502,13 +515,13 @@ h3 {
 }
 
 .tm-card-private {
-  h3.tm-title-marked:before {
+  h3.tm-title-marked:before, .tm-game-type-marker:before {
     content: "\f255";
   }
 }
 
 .tm-card-open {
-  h3.tm-title-marked:before {
+  h3.tm-title-marked:before, .tm-game-type-marker:before {
     content: "\f369";
   }
 }
