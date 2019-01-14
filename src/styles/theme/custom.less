@@ -662,6 +662,7 @@ h3 {
 .tm-top-alt {
   h2 {
     color: #c08cff;
+    margin: 0 0 10px 0;
   }
 
   .bet {
@@ -670,4 +671,30 @@ h3 {
     font-size: 62px;
     white-space: nowrap;
   }
+}
+
+.tm-leader-list {
+  li {
+    position: relative;
+    padding: 0 20px 0 40px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      top: -5px;
+      line-height: inherit;
+      font-family: FontAwesome;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    &::before {
+      content: "\f27b";
+      left: 10px;
+    }
+  }
+}
+
+.tm-border-left {
+  border-left: 1px solid rgba(0,0,0,0.1);
 }
