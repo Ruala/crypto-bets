@@ -221,8 +221,21 @@ h3 {
 }
 
 .uk-card-small {
+  padding: 15px;
+
+  .bet {
+    font-size: @font-size-big;
+  }
   .uk-card-header, .uk-card-body, .uk-card-footer {
     padding: 0;
+  }
+
+  .uk-card-body {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 15px;
   }
 }
 
@@ -558,6 +571,25 @@ h3 {
 
   .tm-header-navbar {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 639px) {
+  .uk-card-small {
+
+    .uk-card-body {
+      padding: 0;
+      border: 1px solid transparent;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+  .uk-card-small {
+
+    .uk-card-body {
+      padding: 0 10%;
+    }
   }
 }
 
