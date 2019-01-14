@@ -164,45 +164,49 @@
 
                         <!--filter-->
                         <div id="tm-my-game-filter" class="tm-filter" hidden>
-                            <div class="uk-flex-between uk-grid-small" uk-grid>
+                            <div class="uk-child-width-expand@m uk-flex-between uk-flex-bottom uk-grid-small" uk-grid>
                                 <div>
-                                    <h3>Роль</h3>
-                                    <div class="uk-button-group">
-                                        <button class="tm-button-role tm-role-user uk-button uk-active">Участник</button>
-                                        <button class="tm-button-role tm-role-creator uk-button">Создатель</button>
+                                    <div class="uk-child-width-auto@s uk-flex-between uk-flex-bottom uk-grid-small" uk-grid>
+                                        <div>
+                                            <h3>Роль</h3>
+                                            <div class="uk-button-group">
+                                                <button class="tm-button-role tm-role-user uk-button uk-active">Участник</button>
+                                                <button class="tm-button-role tm-role-creator uk-button">Создатель</button>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h3>Тип игры</h3>
+                                            <div>
+                                                <select class="tm-select-filter uk-select" name="select-filter-my-games">
+                                                    <option>Приватная</option>
+                                                    <option>Другая</option>
+                                                    <option>Другая</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h3>Ставка</h3>
+                                            <div class="uk-flex uk-flex-middle">
+                                                <input class="uk-input" type="text" placeholder="от">
+                                                <span class="uk-margin-small-right uk-margin-small-left"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                <input class="uk-input" type="text" placeholder="до">
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h3>Игроков</h3>
+                                            <div class="uk-flex uk-flex-middle">
+                                                <input class="uk-input" type="text" placeholder="от">
+                                                <span class="uk-margin-small-right uk-margin-small-left"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                <input class="uk-input" type="text" placeholder="до">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div>
-                                    <h3>Тип игры</h3>
-                                    <div>
-                                        <select class="tm-select-filter uk-select" name="select-filter-my-games">
-                                            <option>Приватная</option>
-                                            <option>Другая</option>
-                                            <option>Другая</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <h3>Ставка</h3>
-                                    <div class="uk-flex uk-flex-middle">
-                                        <input class="uk-input" type="text" placeholder="от">
-                                        <span class="uk-margin-small-right uk-margin-small-left"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                        <input class="uk-input" type="text" placeholder="до">
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <h3>Игроков</h3>
-                                    <div class="uk-flex uk-flex-middle">
-                                        <input class="uk-input" type="text" placeholder="от">
-                                        <span class="uk-margin-small-right uk-margin-small-left"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                        <input class="uk-input" type="text" placeholder="до">
-                                    </div>
-                                </div>
-
-                                <div class="uk-flex uk-flex-bottom">
+                                <div class="uk-width-auto@m uk-flex uk-flex-right">
                                     <button type="button" class="uk-button uk-button-secondary">Показать</button>
                                 </div>
                             </div>
