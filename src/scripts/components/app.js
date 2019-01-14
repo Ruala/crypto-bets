@@ -168,9 +168,11 @@ $(() => {
     //simple select
     (function () {
         const $select = $('select');
-
-        $select.select2({
+        const init = () => $select.select2({
             minimumResultsForSearch: Infinity,
         });
+
+        init();
+        $(window).on('resize', init);
     })();
 });
