@@ -8,21 +8,28 @@ html {
   min-width: 320px;
 }
 
-h2 {
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6,
+h1, h2, h3, h4, h5, h6,
+.uk-navbar-item,
+.uk-navbar-nav > li > a,
+.uk-navbar-toggle {
   font-family: @font-family-global;
+}
+
+h2 {
   font-weight: @font-weight-thick;
   font-size: @font-size-header-small;
   color: @font-color-default;
 }
 
 h3 {
-  font-family: @font-family-global;
   font-weight: @font-weight-global;
   font-size: @font-size-small;
   color: @font-color-global;
   text-transform: uppercase;
   margin: 0 0 10px 0;
 }
+
 
 //
 //UK-Reset
@@ -101,8 +108,11 @@ h3 {
 }
 
 .uk-button {
+  padding: 0 20px;
   border-radius: 3px;
   line-height: 40px;
+  font-size: @font-size-global;
+  border: none;
 }
 
 .uk-button-primary {
@@ -249,6 +259,7 @@ h3 {
 //Local
 //
 .tm-button-new {
+  line-height: 36px;
   text-transform: none;
   font-weight: @font-weight-thick;
 }
