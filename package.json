@@ -15,6 +15,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "select2": "^4.0.6-rc.1",
+    "social-likes-next": "^1.1.0",
     "uikit": "^3.0.0-rc.26"
   },
   "devDependencies": {

@@ -157,4 +157,13 @@ $(() => {
             animate()
         }, 1000 / 120);
     })();
+
+    //simple select
+    (function () {
+        const $select = $('select');
+
+        $select.select2({
+            minimumResultsForSearch: Infinity,
+        });
+    })();
 });
