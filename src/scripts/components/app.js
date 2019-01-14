@@ -52,12 +52,15 @@ $(() => {
         const wt = 1200;
         const ht = 1000;
         const setCanvasWidth = () => {
+            canvas.style.display = 'none';
             canvas.width = parent.clientWidth;
             canvas.height = parent.clientHeight;
+            canvas.style.display = '';
         };
 
         setCanvasWidth();
         setTimeout(setCanvasWidth, 1000);
+        $(window).on('resize', setCanvasWidth);
 
 
         const c = canvas.getContext('2d');
@@ -156,8 +159,6 @@ $(() => {
 
             // fps.push(1000/(performance.now()-t0))
         }
-
-// animate()
 
         setInterval(function () {
             animate()
