@@ -63,6 +63,18 @@ h3 {
   margin-top: 10px;
 }
 
+.uk-grid-divider {
+  margin-left: -60px;
+
+  > * {
+    padding-left: 60px;
+  }
+
+  > :not(.uk-first-column)::before {
+    left: 30px;
+  }
+}
+
 .uk-container {
   max-width: 982px;
 }
@@ -677,8 +689,12 @@ h3 {
   .bet {
     font-weight: @font-weight-thick;
     color: @font-color-default;
-    font-size: 62px;
+    font-size: 60px;
     white-space: nowrap;
+
+    sup {
+      top: -0.3em;
+    }
   }
 
   .uk-grid-divider>:not(.uk-first-column)::before {
