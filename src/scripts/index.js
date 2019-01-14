@@ -1,4 +1,3 @@
-import './vendors/vendors';
+import './vendors';
 import './components/app';
 import '../styles/styles.less';
-//import '../styles/styles.scss';
