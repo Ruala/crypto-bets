@@ -45,6 +45,9 @@ $(() => {
     // neironet
     (function () {
         const canvas = document.querySelector('#tm-raffle-canvas');
+
+        if (!canvas) return;
+
         const parent = canvas.parentElement;
         const wt = 1200;
         const ht = 1000;
