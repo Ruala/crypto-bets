@@ -28,6 +28,34 @@ h3 {
 //UK-Reset
 //
 
+.uk-grid {
+  margin-left: -30px;
+
+  > * {
+    padding-left: 30px;
+  }
+
+  &-small {
+    margin-left: -15px;
+
+    > * {
+      padding-left: 15px;
+    }
+  }
+}
+
+* + .uk-grid-margin,
+.uk-grid +.uk-grid,
+.uk-grid > .uk-grid-margin {
+  margin-top: 30px;
+}
+
+* + .uk-grid-margin-small,
+.uk-grid + .uk-grid-small,
+.uk-grid-small > .uk-grid-margin {
+  margin-top: 15px;
+}
+
 .uk-logo {
   font-family: @font-family-global;
   font-weight: @font-weight-fat;
@@ -125,8 +153,6 @@ h3 {
 }
 
 .uk-card {
-  //width: 160px;
-  //height: 200px;
   background-color: @bg-global-tertiary;
   color: @font-color-default;
   border-radius: 3px;
