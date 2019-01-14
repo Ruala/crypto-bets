@@ -115,6 +115,13 @@ h3 {
   border: none;
 }
 
+.uk-button-large {
+  height: 60px;
+  text-transform: none;
+  font-size: 20px;
+  font-weight: @font-weight-thick;
+}
+
 .uk-button-primary {
   background-color: @bg-button-primary;
   color: @font-color-default;
@@ -199,6 +206,13 @@ h3 {
   padding: 5px 0;
 }
 
+.uk-border-rounded {
+
+  .tm-background-primary {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
 //
 //Select2 classes
 //
@@ -270,6 +284,20 @@ h3 {
 //Global
 //
 
+.tm-button-default {
+  height: 30px;
+  line-height: 28px;
+  max-width: 120px;
+  border: 1px solid #773dbe;
+  padding: 0 15px;
+  font-size: @font-size-small;
+  text-transform: uppercase;
+
+  &:hover, &:focus, &:active {
+    border: 1px solid @font-color-global;
+  }
+}
+
 .tm-button-tertiary {
   background-color: @bg-button-tertiary;
   color: @font-color-primary;
@@ -301,6 +329,10 @@ h3 {
   .select2-container--default .select2-selection--single {
     background-color: @bg-global-secondary;
   }
+}
+
+.tm-box {
+  padding: 25px 30px 25px;
 }
 
 .tm-games {
@@ -536,10 +568,76 @@ h3 {
 }
 
 .tm-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 46px;
   font-size: 36px;
   color: @font-color-default;
   border-radius: 50%;
-  border: 2px solid @font-color-default;
+  border: 3px solid @font-color-global;
+  //text-align: center;
+}
+
+.tm-user-icon {
+  background-image: url("/images/layer-891.png");
+  background-repeat: no-repeat;
+  background-position: -1px 100%;
+  background-size: contain;
+  padding-left: 4px;
+  background-color: #39156d;
+}
+
+.tm-fonts-top {
+  color: @font-color-default;
+  font-size: 18px;
+  font-weight: @font-weight-thick;
+  text-transform: uppercase;
+
+  h3 {
+    font-size: @font-size-global;
+  }
+}
+
+.tm-background-top {
+  background-color: @bg-top;
+  border-radius: 5px 5px 0 0;
+}
+
+.tm-background-primary {
+  background-color: @bg-global-primary;
+}
+
+.tm-background-secondary {
+  background-color: @bg-global-secondary;
+}
+
+.tm-fonts-alt {
+  h2 {
+    font-size: 18px;
+    color: #c08cff;
+  }
+
+  .uk-input {
+    background-color: @bg-input-primary;
+    color: @font-color-global;
+    font-size: @font-size-small;
+    font-weight: @font-weight-global;
+    padding: 0 20px;
+    text-transform: uppercase;
+    height: 30px;
+  }
+}
+
+.tm-text-bets {
+  color: @font-color-default;
+  font-weight: @font-weight-thick;
+}
+
+.tm-game-footer {
+  h2 {
+    font-size: 18px;
+    color: #c08cff;
+  }
 }
